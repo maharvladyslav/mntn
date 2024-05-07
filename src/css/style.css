@@ -1,0 +1,153 @@
+:root {
+  --colorTextPrimary: #ffffff;
+  --colorAccent: #fbd784;
+  --colorBackground: #0b1d26;
+}
+/* ============================Global============================= */
+body {
+  font-family: "Chivo", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--colorTextPrimary);
+  background-color: var(--colorBackground);
+}
+.container {
+  max-width: 1492px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========================header===================== */
+.header {
+  padding-top: 65px;
+}
+.header-container {
+  max-width: 93.3%;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: "Chonburi", serif;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.action-link {
+  font-weight: 900;
+  font-size: 17px;
+}
+/* ===========================main========================= */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 750px;
+}
+.hero-container {
+  max-width: 950px;
+}
+.hero-text {
+  letter-spacing: 0.33em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.hero-title {
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  font-size: 88px;
+  line-height: 1.14;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+.travel {
+  padding-bottom: 200px;
+}
+.travel-step {
+  display: flex;
+  align-items: center;
+  gap: 115px;
+  margin-bottom: 200px;
+}
+.travel-step:nth-child(even) .step-photo {
+  order: -1;
+}
+.travel-step:last-child {
+  margin-bottom: 0;
+}
+.step-body {
+  padding-left: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.step-text {
+  font-weight: 900;
+  letter-spacing: 0.33em;
+  text-transform: uppercase;
+  color: var(--colorAccent);
+}
+.step-title {
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  font-size: 64px;
+}
+.step-description {
+  font-weight: 900;
+  line-height: 1.8;
+}
+.step-link {
+  font-weight: 900;
+  color: var(--colorAccent);
+}
+/* ====================footer======================== */
+.footer {
+  padding-bottom: 120px;
+}
+.footer-container {
+  display: flex;
+  gap: 200px;
+}
+.footer-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-info-text {
+  font-weight: 900;
+  line-height: 1.8;
+  max-width: 303px;
+  flex-grow: 1;
+}
+.footer-info-copyright {
+  line-height: 1.8;
+  opacity: 0.5;
+}
+.blog-title,
+.mntn-title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: var(--colorAccent);
+  margin-bottom: 25px;
+}
+.blog-list,
+.mntn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.blog-link,
+.mntn-link {
+  line-height: 1.8;
+}
