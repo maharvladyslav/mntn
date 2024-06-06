@@ -10,6 +10,10 @@ body {
   font-size: 18px;
   color: var(--colorTextPrimary);
   background-color: var(--colorBackground);
+  background-image: url(../images/background.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }
 .container {
   max-width: 1492px;
@@ -43,9 +47,27 @@ body {
   align-items: center;
   gap: 40px;
 }
+.nav-link:hover {
+  opacity: 0.8;
+}
 .action-link {
   font-weight: 900;
   font-size: 17px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.action-link:hover {
+  opacity: 0.8;
+}
+.action-link::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/account.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 /* ===========================main========================= */
 .hero {
@@ -59,6 +81,15 @@ body {
   letter-spacing: 0.33em;
   text-transform: uppercase;
   margin-bottom: 32px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.hero-text::before {
+  content: "";
+  width: 72px;
+  height: 2px;
+  background-color: var(--colorAccent);
 }
 .hero-title {
   font-family: "Cinzel", serif;
@@ -67,6 +98,24 @@ body {
   line-height: 1.14;
   text-transform: capitalize;
   margin-bottom: 32px;
+}
+
+.hero-link {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.hero-link:hover {
+  opacity: 0.8;
+}
+.hero-link::after {
+  content: "";
+  width: 16px;
+  height: 24px;
+  background-image: url(../images/arrow-down.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .travel {
   padding-bottom: 200px;
@@ -85,15 +134,34 @@ body {
 }
 .step-body {
   padding-left: 150px;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 27px;
+  background-image: url(../images/card-01.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+.travel-step:nth-child(2) .step-body {
+  background-image: url(../images/card-02.svg);
+}
+.travel-step:nth-child(3) .step-body {
+  background-image: url(../images/card-03.svg);
 }
 .step-text {
   font-weight: 900;
   letter-spacing: 0.33em;
   text-transform: uppercase;
   color: var(--colorAccent);
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.step-text::before {
+  content: "";
+  width: 72px;
+  height: 2px;
+  background-color: var(--colorAccent);
 }
 .step-title {
   font-family: "Cinzel", serif;
@@ -107,6 +175,21 @@ body {
 .step-link {
   font-weight: 900;
   color: var(--colorAccent);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.step-link:hover {
+  opacity: 0.8;
+}
+.step-link::after {
+  content: "";
+  width: 24px;
+  height: 16px;
+  background-image: url(../images/arrow-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 /* ====================footer======================== */
 .footer {
@@ -150,4 +233,8 @@ body {
 .blog-link,
 .mntn-link {
   line-height: 1.8;
+}
+.blog-link:hover,
+.mntn-link:hover {
+  opacity: 0.8;
 }
